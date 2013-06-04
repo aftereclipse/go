@@ -10,6 +10,7 @@ Date: 2013/6/4 21:33:43
 SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 -- Table structure for admin
+-- 后台管理表
 -- ----------------------------
 CREATE TABLE `admin` (
   `uname` varchar(30) NOT NULL DEFAULT '',
@@ -20,6 +21,7 @@ CREATE TABLE `admin` (
 
 -- ----------------------------
 -- Table structure for category
+-- 类别表
 -- ----------------------------
 CREATE TABLE `category` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
@@ -31,6 +33,7 @@ CREATE TABLE `category` (
 
 -- ----------------------------
 -- Table structure for hotarticle
+-- 热门推荐文章表
 -- ----------------------------
 CREATE TABLE `hotarticle` (
   `id` bigint(20) NOT NULL DEFAULT '0',
@@ -43,6 +46,7 @@ CREATE TABLE `hotarticle` (
 
 -- ----------------------------
 -- Table structure for hotblog
+-- 热门博客表
 -- ----------------------------
 CREATE TABLE `hotblog` (
   `id` bigint(20) NOT NULL DEFAULT '0',
@@ -55,6 +59,7 @@ CREATE TABLE `hotblog` (
 
 -- ----------------------------
 -- Table structure for lcrelation
+-- 类别 网站关系表
 -- ----------------------------
 CREATE TABLE `lcrelation` (
   `lid` bigint(20) NOT NULL DEFAULT '0',
@@ -65,6 +70,7 @@ CREATE TABLE `lcrelation` (
 
 -- ----------------------------
 -- Table structure for link
+-- 网站表
 -- ----------------------------
 CREATE TABLE `link` (
   `id` bigint(20) NOT NULL DEFAULT '0',
@@ -79,6 +85,7 @@ CREATE TABLE `link` (
 
 -- ----------------------------
 -- Table structure for user
+-- 用户表
 -- ----------------------------
 CREATE TABLE `user` (
   `uid` varchar(30) NOT NULL DEFAULT '',
