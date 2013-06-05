@@ -13,7 +13,6 @@ public class ManagerController extends BaseController {
 	public ModelAndView index() {
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("manager/index");
-
 		return mav;
 	}
 
