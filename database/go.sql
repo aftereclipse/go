@@ -7,6 +7,7 @@ Target Database: go
 Date: 2013/6/4 21:33:43
 */
 
+-- 数据库表文件
 SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 -- Table structure for admin
