@@ -1,9 +1,20 @@
 package cn.go.model;
 
-public class User {
+import java.sql.Date;
 
+public class User {
+	private int id;
 	private String uid;
 	private String pwd;
+	private Date timetag;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public String getUid() {
 		return uid;
@@ -19,6 +30,19 @@ public class User {
 
 	public void setPwd(String pwd) {
 		this.pwd = pwd;
+	}
+
+	public Date getTimetag() {
+		return timetag;
+	}
+
+	public void setTimetag(Date timetag) {
+		this.timetag = timetag;
+	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", uid=" + uid + ", pwd=" + pwd + "]";
 	}
 
 }

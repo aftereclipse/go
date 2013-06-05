@@ -1,12 +1,12 @@
 package cn.go.model;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class Category {
 	private int id;
 	private String name;
 	private int click;
-	private Date timestamp;
+	private Date timetag;
 
 	public int getId() {
 		return id;
@@ -32,12 +32,18 @@ public class Category {
 		this.click = click;
 	}
 
-	public Date getTimestamp() {
-		return timestamp;
+	public Date getTimetag() {
+		return timetag;
 	}
 
-	public void setTimestamp(Date timestamp) {
-		this.timestamp = timestamp;
+	public void setTimetag(Date timetag) {
+		this.timetag = timetag;
+	}
+
+	@Override
+	public String toString() {
+		return "Category [id=" + id + ", name=" + name + ", click=" + click
+				+ ", timetag=" + timetag + "]";
 	}
 
 }
