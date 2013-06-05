@@ -74,9 +74,9 @@ CREATE TABLE `lcrelation` (
 -- ----------------------------
 CREATE TABLE `link` (
   `id` bigint(20) NOT NULL DEFAULT '0',
-  `link` varchar(128) NOT NULL DEFAULT '',
+  `link` varchar(255) NOT NULL DEFAULT '',
   `title` varchar(128) DEFAULT NULL,
-  `text` varchar(128) DEFAULT NULL,
+  `content` varchar(128) DEFAULT NULL,
   `timetag` date DEFAULT NULL,
   `click` int(11) DEFAULT NULL,
   `color` varchar(30) DEFAULT NULL,
