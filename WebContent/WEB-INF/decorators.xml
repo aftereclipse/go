@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/jsp/templates">
+	<!-- 排除 -->
+	<excludes>
+		<pattern>*/ajax*</pattern>
+	</excludes>
+
+	<!-- 前台模板页 -->
+	<decorator name="front" page="front.jsp">
+		<pattern>/global/*</pattern>
+	</decorator>
+
+	<!-- 管理员模板页 -->
+	<decorator name="manager" page="manager.jsp">
+		<pattern>/manager/*</pattern>
+	</decorator>
+
+
+
+</decorators>

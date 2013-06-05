@@ -1,0 +1,23 @@
+body,
+label, input, button, select, textarea,
+.btn,
+.btn-group > .btn, .btn-group > .dropdown-menu, .btn-group > .popover,
+input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input{font-size:12px;}
+
+.empty-sep{margin-left:10px;margin-right:10px;}
+.sep-line{margin:10px 0px;border-bottom:1px #ddd solid;}
+
+.main-show-container{padding:20px 10px;}
+.unit{margin-bottom:20px;padding:5px 0px;}
+.show-grid{background-color: #EEEEEE;border-radius: 6px 6px 6px 6px;}
+
+/*分页信息居中*/
+.middle-vertical{height:30px;line-height:30px;}
+.footer{padding-top:5px;border-top:1px #ccc solid;}
+
+.display-function{padding:0px 10px;}
+.display-title{padding-left:20px;}
+div.empty-bottom,a.empty-bottom,h4.empty-bottom,input.empty-bottom,select.empty-bottom,button.empty-bottom{margin-bottom:10px;}
+
+
+.no-single{list-style:none;}

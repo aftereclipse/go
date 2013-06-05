@@ -1,0 +1,45 @@
+/* 分页容器 */
+.page-container{position:relative;}
+
+/* 分页页码列表 */
+.page-paging{position:absolute;left:0px;top:0px;}
+
+/* 分页片断 */
+.page-slice{margin-right:2px;height:20px;line-height:20px;text-align:center;overflow:hidden;}
+.page-all-container{position:relative;*top:2px;}
+
+.page-first,.page-prevent,.page-next,.page-last,.page-one,.page-currentPage{border:1px #d0d0d0 solid;}
+.page-first{}
+.page-prevent{}
+.page-next{}
+.page-last{}
+.page-disabled{background-color:#EDEDED;color:#999;}
+
+.page-currentPage{color:#fff;background-color:#69B5F1;}
+
+
+a.page-first,a:visited.page-first, a:hover.page-first, a:active.page-first,
+a.page-prevent ,a:visited.page-prevent ,a:hover.page-prevent ,a:active.page-prevent ,
+a.page-next ,a:visited.page-next ,a:hover.page-next ,a:active.page-next ,
+a.page-last ,a:visited.page-last ,a:hover.page-last ,a:active.page-last ,
+a.page-one ,a:visited.page-one ,a:hover.page-one ,a:active.page-one {
+	padding:0px 3px;text-decoration:none;color:#333;background-color:#fff;
+}
+a:hover.page-first ,
+a:hover.page-prevent ,
+a:hover.page-next ,
+a:hover.page-last,
+a:hover.page-one {color:#fff;background-color:#69B5F1;}
+
+.page-disabled,.page-currentPage{padding:0px 3px;}
+
+/* 分页当前状态 */
+.page-status{position:absolute;right:180px;top:5px;}
+.page-current,.page-totalPage,.page-totalCount{font-weight:bold;color:#333;}
+
+/* 跳转到指定页码 */
+.page-jump{position:absolute;right:0px;top:3px;}
+#page-select-bar{margin-left:5px;}
+#page-input{margin-left:5px;margin-right:5px;width:30px;}
+#page-go-bt{padding:0px 3px;}
+
