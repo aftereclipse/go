@@ -42,8 +42,6 @@ public class MailTool implements Constant {
 		loadProperties();
 		// 完成初始配置
 		configurate();
-		log.info("username:" + username + ",passsword:" + password
-				+ ". in construct");
 	}
 
 	public static final MailTool getInstance() {
@@ -119,10 +117,6 @@ public class MailTool implements Constant {
 		host = prop.getProperty("mail.host");
 		username = prop.getProperty("mail.host.username");
 		password = prop.getProperty("mail.host.password");
-
-		log.info("Param [host]:[" + host + "]");
-		log.info("Param [username]:[" + username + "]");
-		log.info("Param [password]:[" + password + "]");
 	}
 
 	private void configurate() {

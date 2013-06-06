@@ -16,6 +16,7 @@
 
 	<mvc:resources mapping="/common/**" location="/common/" />
 	<mvc:resources mapping="/error/**" location="/error/" />
+	
 	<mvc:annotation-driven />
 	<mvc:default-servlet-handler />
 

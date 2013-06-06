@@ -1,6 +1,5 @@
 package cn.go.model;
 
-import java.util.Date;
 
 public class Link {
 
@@ -10,7 +9,7 @@ public class Link {
 	private String content;
 	private int click;
 	private String color;
-	private Date timetag;
+	private String timetag;
 
 	public int getId() {
 		return id;
@@ -60,11 +59,11 @@ public class Link {
 		this.color = color;
 	}
 
-	public Date getTimetag() {
+	public String getTimetag() {
 		return timetag;
 	}
 
-	public void setTimetag(Date timetag) {
+	public void setTimetag(String timetag) {
 		this.timetag = timetag;
 	}
 

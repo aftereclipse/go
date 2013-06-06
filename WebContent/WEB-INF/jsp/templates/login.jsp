@@ -17,23 +17,15 @@
 <base href="<%=basePath%>">
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title><decorator:title default="导航" /></title>
+<title><decorator:title default="登录" /></title>
 <link rel="stylesheet" type="text/css" href="common/css/reset.css" />
-<link rel="stylesheet" type="text/css" href="common/css/front.css" />
+<link rel="stylesheet" type="text/css" href="common/css/login.css" />
 <script type="text/javascript" src="common/js/jquery.min.js"></script>
 <script type="text/javascript" src="common/js/front.js"></script>
 </head>
 <body>
-<c:set var="currentPage" value="${requestScope.currentPage}"></c:set>
-<c:set var="countPerPage" value="${requestScope.countPerPage}"></c:set>
-<c:set var="pager" value="${requestScope.pager}"></c:set>
-<c:set var="maxPagerShowLength" value="${requestScope.maxPageShowLength}"></c:set>
-
 <div class="container">
 	<decorator:body />
-	
-	<%@ include file="../include/footer.jsp" %>
 </div>
-
 </body>
 </html>

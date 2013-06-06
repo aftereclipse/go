@@ -1,13 +1,12 @@
 package cn.go.model;
 
-import java.sql.Date;
 
 public class Hotblog {
 	private int id;
 	private String title;
 	private String link;
 	private int click;
-	private Date timetag;
+	private String timetag;
 
 	public int getId() {
 		return id;
@@ -41,11 +40,11 @@ public class Hotblog {
 		this.click = click;
 	}
 
-	public Date getTimetag() {
+	public String getTimetag() {
 		return timetag;
 	}
 
-	public void setTimetag(Date timetag) {
+	public void setTimetag(String timetag) {
 		this.timetag = timetag;
 	}
 

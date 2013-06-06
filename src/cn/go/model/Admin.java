@@ -1,12 +1,11 @@
 package cn.go.model;
 
-import java.sql.Date;
 
 public class Admin {
 	private int id;
 	private String uname;
 	private String passwd;
-	private Date timetag;
+	private String timetag;
 
 	public int getId() {
 		return id;
@@ -32,11 +31,11 @@ public class Admin {
 		this.passwd = passwd;
 	}
 
-	public Date getTimetag() {
+	public String getTimetag() {
 		return timetag;
 	}
 
-	public void setTimetag(Date timetag) {
+	public void setTimetag(String timetag) {
 		this.timetag = timetag;
 	}
 

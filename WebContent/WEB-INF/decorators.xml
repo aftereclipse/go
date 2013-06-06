@@ -5,6 +5,13 @@
 		<pattern>*/ajax*</pattern>
 	</excludes>
 
+	<!-- 登录模板页 -->
+	<decorator name="login" page="login.jsp">
+		<pattern>*/global/viewLogin*</pattern>
+		<pattern>*/global/login*</pattern>
+		<pattern>*/global/logout*</pattern>
+	</decorator>
+
 	<!-- 前台模板页 -->
 	<decorator name="front" page="front.jsp">
 		<pattern>/global/*</pattern>
@@ -14,7 +21,5 @@
 	<decorator name="manager" page="manager.jsp">
 		<pattern>/manager/*</pattern>
 	</decorator>
-
-
 
 </decorators>

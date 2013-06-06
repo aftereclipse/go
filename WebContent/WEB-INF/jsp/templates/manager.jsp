@@ -42,17 +42,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="brand" href="manager/global/index.htm">导航管理后台</a>
+      <a class="brand" href="manager/index">导航管理后台</a>
       <div class="nav-collapse collapse">
         <p class="navbar-text pull-right">
-			<a href="global/logout.htm" class="btn btn-small">
+			<a href="global/logout" class="btn btn-small">
 				欢迎您，${sessionScope.loginUser }
 				<span class="empty-sep">|</span> 
 				退出系统
 			</a>
 		</p>
         <ul id="globalNav" class="nav">
-          <li><a href="manager/global/index.htm">首页</a></li>
+          <li><a href="manager/index">首页</a></li>
+          <li><a href="manager/admin/list">管理员</a></li>
+          <li><a href="manager/category/list">标签</a></li>
         </ul>
       </div>
     </div>
@@ -61,10 +63,7 @@
 <div class="container">
 	<decorator:body />
 	
-	<div class="muted footer">
-		© 2013 
-	</div>
+	<%@ include file="../include/footer.jsp" %>
 </div>
-
 </body>
 </html>
