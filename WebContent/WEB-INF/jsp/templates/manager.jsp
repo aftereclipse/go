@@ -55,6 +55,7 @@
           <li><a href="manager/index">首页</a></li>
           <li><a href="manager/admin/list">管理员</a></li>
           <li><a href="manager/category/list">标签</a></li>
+           <li><a href="manager/link/list">链接</a></li>
         </ul>
       </div>
     </div>
