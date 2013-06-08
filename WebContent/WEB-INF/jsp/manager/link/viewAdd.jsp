@@ -53,12 +53,6 @@
 			<span class="text-error">*</span>
 		</div>
 		<div class="row-fluid">
-		<c:forEach var="category" items="${requestScope.dataList }" varStatus="status">
-		<label class="checkbox">
-		   ${category.name }
-		<input type ="checkbox" class="span4"  name="${category.id}"  id="${category.id}"  value="${category.id}"  autocomplete="off"></input>
-		</label>
-		</c:forEach>
 		</div>
 		<div class="row-fluid">
 			<input type="submit" value="创建" class="btn btn-primary"/>

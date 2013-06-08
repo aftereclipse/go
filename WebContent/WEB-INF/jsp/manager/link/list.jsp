@@ -66,7 +66,7 @@
 		<c:set var="query" value="&name=${requestScope.name }"/>
 		<c:import url="../../pageslice/tool/page.jsp">
 			<c:param name="url" value="manager/link/list"></c:param>
-			<c:param name="query" value="${query }"></c:param>
+			<c:param name="query" value="${query}"></c:param>
 		</c:import>
 	
 		<table class="table table-striped table-hover">
@@ -79,24 +79,24 @@
 				<th class="muted">创建时间</th>
 				<th class="muted">操作</th>
 			</tr>
-			<c:forEach var="category" items="${requestScope.dataList }" varStatus="status">
+			<c:forEach var="link" items="${requestScope.dataList }" varStatus="status">
 			<tr>
 				<td>${(currentPage-1) * countPerPage + status.index + 1 }</td>
-				<td>${category.title }</td>
-				<td>${category.content }</td>
-				<td>${category.link }</td>
-				<td>${category.click }</td>
-				<td>${category.timetag }</td>
+				<td>${link.title }</td>
+				<td>${link.content }</td>
+				<td>${link.link }</td>
+				<td>${link.click }</td>
+				<td>${link.timetag }</td>
 				<td>
-					<a href="manager/link/viewModify?id=${category.id}"><i class="icon-edit"></i> 编辑</a>
-					<a href="#confirmDialog"  data-toggle="modal" data-target="#confirmDialog" url="manager/link/delete?id=${category.id}" tip="确认要删除链接【${category.title}】嘛？" class="confirm-trigger"><i class="icon-trash"></i> 删除</a>
+					<a href="manager/link/viewModify?id=${link.id}"><i class="icon-edit"></i> 编辑</a>
+					<a href="#confirmDialog"  data-toggle="modal" data-target="#confirmDialog" url="manager/link/delete?id=${link.id}" tip="确认要删除链接【${link.title}】嘛？" class="confirm-trigger"><i class="icon-trash"></i> 删除</a>
 				</td>
 			</tr>
 			</c:forEach>
 		</table>
 		
 		<%-- 分页 --%>
-		<c:set var="query" value="&name=${requestScope.title }"/>
+		<c:set var="query" value="&title=${requestScope.title}&content=${requestScope.content}&link=${requestScope.link }"/>
 		<c:import url="../../pageslice/tool/page.jsp">
 			<c:param name="url" value="manager/link/list"></c:param>
 			<c:param name="query" value="${query }"></c:param>

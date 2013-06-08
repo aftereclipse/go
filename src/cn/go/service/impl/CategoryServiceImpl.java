@@ -14,8 +14,6 @@ public class CategoryServiceImpl extends BaseServiceImpl<Category> implements
 	@Override
 	public List getAllCategory() {
 		String sql = "select * from category limit 0,100";
-		
-		
 		return jdbcTemplate.queryForList(sql);
 	}
 	
